@@ -9,8 +9,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            list-style-type: none;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 9rem;
+            background-color: #424874;
+            font-size: 1.7rem;
+            color: #fff;
+            z-index: 1;
+        }
+
+        header .header__menu {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+
+        .header__menu li {
+            margin-right: 3rem;
+        }
+
+        header h1 {
+            margin-top: 2rem;
+        }
+
+        #logo {
+            margin-left: 5rem;
+            justify-self: center;
+            /* position: absolute; */
+            padding: 1rem 3rem;
+            width: 7rem;
+            height: 7rem;
+            cursor: pointer;
+        }
+
+
+    </style>
 </head>
 <body>
+    
+    <header>
+        <img src="img/лого.jpg" alt="" id="logo">
+        <ul class="header__menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        
+    </header>
+
     <main style="display:flex;
                  flex-direction: column;
                  justify-content:center;

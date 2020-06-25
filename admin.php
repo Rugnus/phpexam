@@ -6,12 +6,15 @@
 
 ?>
 
-<form action="inter.php" method="post">
-    <label for="login">Логин: </label> <input name="login" id="login" type="text" require>
-    <label for="pass">Пароль: </label><input name="pass" id="pass" type="password" require>
-    <input type="submit" name="sub" value="Администрирование">
+<div class="admin-form" style="display: flex; flex-direction: column;">
+    <form action="inter.php" method="post">
+        <label for="login">Логин: </label> <input name="login" id="login" type="text" require>
+        <label for="pass">Пароль: </label><input name="pass" id="pass" type="password" require>
+        <input type="submit" name="sub" value="Администрирование">
 
-</form>
+    </form>
+</div>
+    
 
 <?php
 
